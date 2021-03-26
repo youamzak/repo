@@ -10,21 +10,14 @@
 // Gris fond image logo_grey : #F2F2F2
 // Vert Oasis de la Chaumière : rgb(191,187,17)
 
-// $header_img_height: 150px;
-// $nav_txt_color: black;
-// $div_title_txt_color: white;
-// $div_titel_bkg_color: rgb(191,187,17);
-// $nav_bkg_color: #F2F2F2;
-
 $header_img_height: 150px;
 $div_title_txt_color: white;
-$div_titel_bkg_color: rgb(191,187,17);//darkolivegreen;
-$nav_bkg_color: Gainsboro;//rgb(103,52,52);
+$div_titel_bkg_color: rgb(191,187,17);
+$nav_bkg_color: Gainsboro;
 $nav_txt_color: black;
 
 html {
   scroll-behavior: smooth;
-  //overflow-y: scroll;
 }
 
 body{
@@ -137,6 +130,32 @@ main section {
   justify-content: space-between;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.div-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  background-color: $nav_bkg_color;
+  width: 70%;
+}
+
+.div-footer a img {
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+}
+
+.div-footer a {
+  color: $nav_txt_color;
+}
+///////////////
 .arrow {
   display: flex;
   background-color: #f5f3f2 ;
@@ -175,7 +194,7 @@ iframe {
   background-color: lightgrey;
 }
 
-.onglets a:hover {
+.onglets a:hover, .div-footer a:hover {
   text-decoration: none;
   font-weight: bold;
 }
@@ -242,7 +261,13 @@ iframe {
     min-width: 0px;
   }
 
-
+  footer {
+    margin-bottom: 0px;
+  }
+  
+  .div-footer {
+    width: 100%;
+  }
   
 }
 
